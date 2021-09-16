@@ -1,0 +1,14 @@
+﻿body {
+}
+
+.jumbotron {
+    background-color: darkseagreen;
+}
+
+.table{
+    background-color: lightyellow;
+}
+
+.table thead{
+    background-color:bisque;
+}

@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="Library.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">National Library of Ireland</h1>
+            <p class="lead">The mission of the National Library of Ireland is 'To collect, preserve, promote </p>
+            <p class="lead">and make accessible the documentary and intellectual record of the life of Ireland and to contribute to the provision of access to the larger universe of recorded knowledge'</p>
+        </div>
+
+        <!--NAVIGATION-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <a class="navbar-brand" href="#"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Add.html">Aggiungi Libro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="Edit.html">Modifica Libro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <br />
+
+    <table class="table container">
+        <thead class="thead">
+            <tr>
+                <th scope="col">ISBN</th>
+                <th scope="col">Titolo</th>
+                <th scope="col">Autore</th>
+                <th scope="col">Genere</th>
+                <th scope="col">Quantità</th>
+                <th scope="col">Disponibile</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">111222333</th>
+                <td>Harry potter e la pietra filosofale</td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>10</td>
+                <td>sì</td>
+                <td>
+                    <a href="Edit.html">
+                        <i class="fa fa-edit" style="font-size:36px"></i>
+                    </a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa fa-trash-o"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">444555666</th>
+                <td>Harry potter e camera dei segreti</td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>1</td>
+                <td>sì</td>
+                <td>
+                    <a href="Edit.html">
+                        <i class="fa fa-edit" style="font-size:36px"></i>
+                    </a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa fa-trash-o"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">777888999</th>
+                <td>Harry potter e il prigioniero di azkaban</td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>13</td>
+                <td>no</td>
+                <td>
+                    <a href="Edit.html">
+                        <i class="fa fa-edit" style="font-size:36px"></i>
+                    </a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa fa-trash-o"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">000111222</th>
+                <td>Harry potter e il calice di fuoco</td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>8</td>
+                <td>sì</td>
+                <td>
+                    <a href="Edit.html">
+                        <i class="fa fa-edit" style="font-size:36px"></i>
+                    </a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa fa-trash-o"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Modale -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Attenzione!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Vuoi cancellare il libro?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                    <button type="button" class="btn btn-primary">Salva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--FOOTER-->
+    <footer class="text-center text-white" style="background-color: darkseagreen">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Images -->
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/fluid/city/113.jpg"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/fluid/city/111.jpg"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/fluid/city/112.jpg"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/fluid/city/114.jpg"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/fluid/city/115.jpg"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                             data-ripple-color="light">
+                            <img src="https://mdbootstrap.com/img/new/fluid/city/116.jpg"
+                                 class="w-100" />
+                            <a href="#!">
+                                <div class="mask"
+                                     style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Images -->
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
+
+</body>
+
+</html>
